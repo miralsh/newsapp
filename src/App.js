@@ -10,10 +10,6 @@ const App = () => {
   const apiKey = process.env.REACT_APP_NEWS_API;
   const [progress, setProgress] = useState(0);
 
-  const setProg = (progress) => {
-    setProgress(progress);
-  };
-
   return (
     <Router>
       <div>
@@ -25,7 +21,7 @@ const App = () => {
             path="/"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="home"
                 pageSize={10}
@@ -39,7 +35,7 @@ const App = () => {
             path="/business"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="business"
                 pageSize={10}
@@ -53,7 +49,7 @@ const App = () => {
             path="/entertainment"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="entertainment"
                 pageSize={10}
@@ -67,7 +63,7 @@ const App = () => {
             path="/general"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="general"
                 pageSize={10}
@@ -81,7 +77,7 @@ const App = () => {
             path="/health"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="health"
                 pageSize={10}
@@ -95,7 +91,7 @@ const App = () => {
             path="/science"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="science"
                 pageSize={10}
@@ -109,7 +105,7 @@ const App = () => {
             path="/sports"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="sports"
                 pageSize={10}
@@ -123,7 +119,7 @@ const App = () => {
             path="/technology"
             element={
               <News
-                setProgress={setProg}
+                setProgress={setProgress}
                 apiKey={apiKey}
                 key="technology"
                 pageSize={10}

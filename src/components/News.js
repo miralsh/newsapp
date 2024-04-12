@@ -9,7 +9,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
-  //document.title = `${this.capitalize(props.category)} - DailyNews`;
+
   const capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
@@ -29,7 +29,9 @@ const News = (props) => {
     props.setProgress(100);
   };
   useEffect(() => {
+    document.title = `${capitalize(props.category)} - DailyNews`;
     updateNews();
+    // eslint-disable-next-line
   }, []);
 
   /*  const handleNextClick = async () => {
