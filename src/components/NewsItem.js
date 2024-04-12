@@ -6,7 +6,7 @@ export class NewsItem extends Component {
       this.props;
     return (
       <div>
-        <div className="card my-2" style={{ marginLeft: 10, marginRight: 10 }}>
+        <div className="card my-2">
           <div
             style={{
               display: "flex",
